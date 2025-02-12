@@ -1,5 +1,5 @@
 import { render } from "preact";
-import { AllCommunityModule, ModuleRegistry } from "ag-grid-community";
+import { AllCommunityModule, ModuleRegistry } from "ag-grid-enterprise";
 
 // Register all Community features
 ModuleRegistry.registerModules([AllCommunityModule]);

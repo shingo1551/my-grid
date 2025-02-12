@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "ag-grid-community": "^33.1.0",
+    "ag-grid-enterprise": "^33.1.0",
     "preact": "^10.25.4"
   },
   "devDependencies": {
