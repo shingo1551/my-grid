@@ -1,19 +1,14 @@
 import "./app.css";
-import { Component, createRef, RefObject } from "preact";
+import { Component, createRef } from "preact";
 import { createGrid, GridApi } from "ag-grid-enterprise";
 import { ICar, gridOptions } from './options.ts';
 
 export class App extends Component {
-  div: RefObject<any>;
-  grid: GridApi<ICar> = null as any;
-
-  constructor() {
-    super();
-    this.div = createRef();
-  }
+  div =  createRef<HTMLDivElement>();
+  grid!: GridApi<ICar>;
 
   componentDidMount() {
-    this.grid = createGrid(this.div.current, gridOptions);
+    this.grid = createGrid(this.div.current!, gridOptions);
   }
 
   render() {
